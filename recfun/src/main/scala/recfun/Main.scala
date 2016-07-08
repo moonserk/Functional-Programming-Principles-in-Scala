@@ -15,7 +15,7 @@ object Main {
    */
     def pascal(c: Int, r: Int): Int = {
       def factorial(n: Int): Int =
-        if(n < 1) 1 else n * factorial(n - 1)
+        if(n <= 1) 1 else n * factorial(n - 1)
       factorial(r) / (factorial(c) * factorial(r - c))
     }
   /**
